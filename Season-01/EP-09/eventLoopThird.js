@@ -7,7 +7,7 @@ const __dirname = path.dirname(__fileName);
 
 setImmediate(() => console.log("setImmediate"));
 
-Promise.resolve("Promise").then(() => console.log("Promise Resolved"));
+Promise.resolve("Promise Resolved").then(console.log);
 
 const a = 100;
 fs.readFile(path.join(__dirname, "gossip.txt"), "utf8", (err, data) => {
